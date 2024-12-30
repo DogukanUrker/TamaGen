@@ -21,11 +21,11 @@ export const metadata: Metadata = {
     title: "TamaGen - Recipe Generator",
     description: "Transform ingredients into delicious recipes",
     type: "website",
-    url: "https://tamagen.vercel.app",
+    url: "https://tama-gen.vercel.app",
     siteName: "TamaGen",
     images: [
       {
-        url: "https://tamagen.vercel.app/ogImage.png",
+        url: "https://tama-gen.vercel.app/ogImage.png",
         width: 1200,
         height: 630,
         alt: "TamaGen - Recipe Generator",
@@ -37,7 +37,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "TamaGen - Recipe Generator",
     description: "Transform ingredients into delicious recipes",
-    images: ["https://tamagen.vercel.app/ogImage.png"],
+    images: ["https://tama-gen.vercel.app/ogImage.png"],
   },
 };
 
