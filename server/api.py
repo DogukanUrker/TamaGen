@@ -208,5 +208,9 @@ def generateRecipe():
         return jsonify({"error": str(errorMessage)}), 500
 
 
+def index():
+    return "Welcome to the Gemini AI Recipe Generator!"
+
+
 if __name__ == "__main__":
     app.run()
