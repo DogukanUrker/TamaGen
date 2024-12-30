@@ -26,7 +26,7 @@ export default function FavoriteRecipes() {
 
   return (
     <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-      {favorites.map((recipe, index) => (
+      {favorites.map((recipe) => (
         <div key={recipe.id} className="bg-white dark:bg-gray-800 rounded-2xl shadow-xl overflow-hidden transition-all duration-300 ease-in-out hover:shadow-2xl transform hover:-translate-y-1">
           <div className="relative h-48">
             <Image src={recipe.image} alt={recipe.title} layout="fill" objectFit="cover" />
