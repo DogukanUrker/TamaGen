@@ -1,31 +1,39 @@
-import './globals.css'
-import { Inter } from 'next/font/google'
-import Header from './components/Header'
-import { ThemeProvider } from './components/ThemeProvider'
+import type { Metadata } from "next";
+import { Geist, Azeret_Mono as Geist_Mono } from "next/font/google";
+import "./globals.css";
+import { cn } from "@/lib/utils";
 
-const inter = Inter({ subsets: ['latin'] })
+const geistSans = Geist({
+  variable: "--font-geist-sans",
+  subsets: ["latin"],
+});
 
-export const metadata = {
-  title: 'TamaGen - AI Recipe Generator',
-  description: 'Generate delicious recipes from your available ingredients',
-}
+const geistMono = Geist_Mono({
+  variable: "--font-geist-mono",
+  subsets: ["latin"],
+});
+
+export const metadata: Metadata = {
+  title: "TamaGen - Recipe Generator",
+  description: "Transform ingredients into delicious recipes",
+};
 
 export default function RootLayout({
   children,
-}: {
-  children: React.ReactNode
-}) {
+}: Readonly<{
+  children: React.ReactNode;
+}>) {
   return (
-    <html lang="en" suppressHydrationWarning>
-      <body className={`${inter.className} min-h-screen flex flex-col`}>
-        <ThemeProvider attribute="class" defaultTheme="system" enableSystem>
-          <Header />
-          <main className="flex-grow">
-            {children}
-          </main>
-        </ThemeProvider>
+    <html lang="en" className="dark">
+      <body
+        className={cn(
+          geistSans.variable,
+          geistMono.variable,
+          "antialiased min-h-screen bg-background text-foreground"
+        )}
+      >
+        {children}
       </body>
     </html>
-  )
+  );
 }
-
