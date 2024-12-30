@@ -208,6 +208,7 @@ def generateRecipe():
         return jsonify({"error": str(errorMessage)}), 500
 
 
+@app.route("/")
 def index():
     return "Welcome to the Gemini AI Recipe Generator!"
 
