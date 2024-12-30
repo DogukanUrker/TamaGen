@@ -1,0 +1,2 @@
+# TamaGen
+ AI Recipe Genarator 
