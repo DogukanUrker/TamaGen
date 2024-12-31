@@ -1,7 +1,7 @@
 export default function OGPage() {
   return (
     <div className="h-screen w-screen flex items-center justify-center bg-black select-none">
-      <div className="w-[600px] h-[315px] bg-zinc-950 flex flex-col items-center justify-center gap-8 relative overflow-hidden">
+      <div className="w-[1200px] h-[630px] bg-zinc-950 flex flex-col items-center justify-center gap-8 relative overflow-hidden">
         {/* Background Pattern */}
         <div className="absolute inset-0 bg-[radial-gradient(circle_at_1px_1px,_rgb(39,39,42)_2px,_transparent_0)] bg-[size:40px_40px]" />
 
