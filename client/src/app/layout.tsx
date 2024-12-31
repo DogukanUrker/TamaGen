@@ -16,13 +16,24 @@ const geistMono = Geist_Mono({
 export const metadata: Metadata = {
   title: "TamaGen - Recipe Generator",
   description: "Transform ingredients into delicious recipes",
-  keywords: ["recipe, generator, ai, ingredients, cooking, food"],
+  keywords: [
+    "recipe",
+    "generator",
+    "ai",
+    "ingredients",
+    "cooking",
+    "food",
+    "culinary",
+    "kitchen",
+    "meals",
+    "dishes",
+  ],
   openGraph: {
     title: "TamaGen - Recipe Generator",
     description: "Transform ingredients into delicious recipes",
-    type: "website",
     url: "https://tama-gen.vercel.app",
     siteName: "TamaGen",
+    type: "website",
     images: [
       {
         url: "https://tama-gen.vercel.app/ogImage.png",
@@ -33,8 +44,8 @@ export const metadata: Metadata = {
     ],
   },
   twitter: {
-    site: "@dogukanurker",
     card: "summary_large_image",
+    site: "@dogukanurker",
     title: "TamaGen - Recipe Generator",
     description: "Transform ingredients into delicious recipes",
     images: ["https://tama-gen.vercel.app/ogImage.png"],
